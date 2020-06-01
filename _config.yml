@@ -1,2 +1,4 @@
 name: Paul Burgeson
 markdown: kramdown
+
+theme: jekyll-theme-architect
