@@ -16,4 +16,4 @@ The printing went smoothly.  I may try to start capturing time lapses of these p
 
 Overall this process went smoothly.  I'm looking forward to get this physically assembled.
 
-![3D Printed Corner Bulge](../assets/3dscanner/3Complete_3D_Printed_Parts.jpg)
+![Complete Set of 3D Printed Parts](../assets/3dscanner/Complete_3D_Printed_Parts.jpg)
