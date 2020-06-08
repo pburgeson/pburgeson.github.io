@@ -4,6 +4,7 @@ title: "3D Printing the 3D Scanner"
 date: 2020-06-04
 ---
 This project is really about 3D printing the components, assembling everything, then running and testing the code.  Since I have a 3D Printer, getting the physical parts made seemed like a good first step.  My 3D Printer is the Cetus3D MK3.  It has worked well so far but I haven't used it very heavily.
+
 ![Cetus 3D MK3](../../../assets/3dscanner/Cetus_3D_Printer.jpg)
 
 The files to be printed are available on [thingiverse](https://www.thingiverse.com/thing:3050437).  These parts have clearly been designed to printed without support material and I have to give Thomas the designer credit for that.  Aside from standard 3D printing challenges, the biggest issue was the build volume of my 3D printer.  The stands can be printed on a standard 20x20x20 cm cube but my printer has an 18x18x18 cm build volume.  I opted to split the stand into 2 pieces and glue them back together.  One of the stands is shown below.
