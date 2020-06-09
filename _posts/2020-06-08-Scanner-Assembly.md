@@ -13,4 +13,4 @@ A bit of light oil was applied to the bearing surfaces.  It seemed to make a sma
 
 I tried to caputre a time lapse mechanical assembly but it did not go smoothly due to the aforementioned printing issues.  I had to turn off the time lapse during the printing.  Then I didn't think to turn it back on while assembly was completed.  I will attribute that to being inexperienced in the world of creation on online content.  Since this is not for a youtube channel, I have opted not to go back and redo the time lapse.
 
-**Embed youtube video**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q4OwQgDv-8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
