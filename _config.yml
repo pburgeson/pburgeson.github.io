@@ -1,2 +1,8 @@
 name: Paul Burgeson
 markdown: kramdown
+
+plugins:
+  - jekyll-feed
+title: Paul Burgeson’s blog
+description: Paul Burgeson's Projects
+author: Paul Burgeson
