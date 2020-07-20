@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scanner Final Asesmbly"
+title: "Scanner Final Assembly"
 date: 2020-07-19
 ---
 The electronics PCB arrived from Germany this weekend.  There were months of delays due to COVID.  It was time to cease putting off additional progress.  I assembled the PCB which was a quick process as all components were through hole.  I took the risk of not testing more than a visual inspection of the soldered joints.  The components I was connecting were cheap and I have spares so I opted to just turn on power and see if anything was damaged.  After power was connected, nothing let out blue smoke so I forged ahead.
