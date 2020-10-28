@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Hi.
+
 <img src="assets/home/Headshot-2019 - Cropped.jpg" width="300" height="300">
 
 ## I'm Paul.
