@@ -19,7 +19,7 @@ theme: beautiful-jekyll-theme
 navbar-links:
   3D Scanner: "3dscanner"
   Mini Falcon 9: "minifalcon9"
-  Past Project:
+  Past Projects:
     - DIY Glass: diyglass
     - Cycloidal Drive: cycloidaldrive
   Resume: "resume"
