@@ -3,7 +3,6 @@ layout: default
 ---
 
 # Hi.
-
 <img src="assets/home/Headshot-2019 - Cropped.jpg" width="300" height="300">
 
 ## I'm Paul.
@@ -14,4 +13,4 @@ I love learning new things.  The preferred approach is dive in and try it.  Diff
 ## Personal Life
 Spending time with my wife and son outside is far and above my favorite past time.  We particularly enjoy the Boundary Waters in Minnesota and the beach at St George Island in Florida.  When I'm not tinkering in my garage or outdoors with my family, you might find me working towards my private pilot's license.  
 
-<img src="assets/home/familypic.jpg">
+![](assets/home/familypic.jpg)
