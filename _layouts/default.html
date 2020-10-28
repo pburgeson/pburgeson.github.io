@@ -1,44 +1,25 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121949612-2"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+---
+layout: base
+---
 
-			  gtag('config', 'UA-121949612-2');
-			</script>
+<div class="intro-header"></div>
 
-			
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<!--<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="alternate" type="application/atom+xml" title="Paul Burgeson's blog" href="/feed.xml">-->
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        	<li><a href="/">Home</a></li>
-				<li><a href="/3dscanner">3D Scanner</a></li>
-				<li><a href="/minifalcon9">Mini Falcon 9</a></li>
-				<li>Past Projects</li>
-				<li><a href="/resume">Resume</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:paulburgeson@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/pburgeson">GitHub</a></li>
-					<li><a href="www.linkedin.com/in/paulburgeson">LinkedIn</a></li>
-				</ul>
-			<small>&copy; Copyright {{ 'now' | date: "%Y" }}, Paul Burgeson</small>
-			</footer>
-		</body>
-	</html>
+<div role="main" class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  {% if page.before-content %}
+    <div class="before-content">
+      {% for file in page.before-content %}
+        {% include {{ file }} %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.after-content %}
+    <div class="after-content">
+      {% for file in page.after-content %}
+        {% include {{ file }} %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
