@@ -17,12 +17,12 @@ theme: beautiful-jekyll-theme
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  3D Scanner: "3dscanner"
-  Mini Falcon 9: "minifalcon9"
+  3D Scanner: 3dscanner
+  Mini Falcon 9: minifalcon9
   Past Projects:
     - DIY Glass: diyglass
     - Cycloidal Drive: cycloidaldrive
-  Resume: "resume"
+  Resume: resume
 
 # --- Logo --- #
 
