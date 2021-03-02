@@ -29,12 +29,12 @@ Cycloidal drives require a particular profile.  After picking through [this rese
 ### Making a Prototype
 With a mathematically functional gear profile in hand, it was time for me to make a real gearbox.  I opted to start small and make a low-fidelity, hand-operated mock-up to verify the gear profile's functionality.  The CAD was done in Fusion 360 and can be found [here](https://a360.co/2CluaLq).  I had to change filament spools before the 3D printer could complete all the parts.  This change created an excellent two-tone prototype that made it easier to see what was going on in the gearbox.  It worked well enough to demonstrate the concept.  The tolerances were far too loose to be a functional gearbox.  With lessons learned, I moved on to bigger and better gearboxes.
 
-<img src="../assets/img/gokart.jpg" width="500">
+<img src="../assets/img/Hand_Turned_Rear.jpg" width="500">
 
 ### Making the Real Gearbox
 The CAD modeling for the real gearbox began reasonably smoothly as I had a working gearbox.  The problems that I ran into were based entirely on reducing costs.  As I looked for bearings available off the shelf, I found that small-diameter bears are not cheap.  It turns out that there is a reason most gearboxes are expensive: tight tolerances and costly bearings.  To limit costs, I opted for bronze bushings instead of rolling element bearings.  After completing the CAD found [here](https://a360.co/33AocBz), the 3D printer began its work.  The printing went smoothly.  Assembly went less smoothly.  There were multiple fit issues due to the variation in 3D printing tolerance on my low-cost, consumer-grade printer.  A vice and hammer took care of the assembly problems.  Surprising no one, bronze bushings have substantially more drag than rolling element bearings.  The assembled gearbox did not come close to rotating.
 
-<img src="../assets/img/gokart.jpg" width="500">
+<img src="../assets/img/cycloidal_final_parts.jpg" width="500">
 
 ### Final Gearbox for the Go Kart
 At this point, I had spent as much on parts for a cycloidal gearbox as a cheap planetary gearbox costs direct from China.  Having gained the design experience but being unable to redesign and rebuild the cycloidal gearbox without significantly more money, I opted to cut ties with the project.  The overarching goal was to make my son's go-kart more functional.  Wanting to avoid a sunk cost fallacy, I humbled myself. I bought the cheap planetary gearbox from Amazon.  4 weeks later, the go-kart was operational again, and my son was thoroughly enjoying it.
