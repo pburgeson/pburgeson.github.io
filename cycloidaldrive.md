@@ -39,4 +39,4 @@ The CAD modeling for the real gearbox began reasonably smoothly as I had a worki
 ### Final Gearbox for the Go Kart
 At this point, I had spent as much on parts for a cycloidal gearbox as a cheap planetary gearbox costs direct from China.  Having gained the design experience but being unable to redesign and rebuild the cycloidal gearbox without significantly more money, I opted to cut ties with the project.  The overarching goal was to make my son's go-kart more functional.  Wanting to avoid a sunk cost fallacy, I humbled myself. I bought the cheap planetary gearbox from Amazon.  4 weeks later, the go-kart was operational again, and my son was thoroughly enjoying it.
 
-<img src="../assets/img/gokart.jpg" width="500">
+<img src="../assets/img/cycloidal_alternative.jpg" width="500">
