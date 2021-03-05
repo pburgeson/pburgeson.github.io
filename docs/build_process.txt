@@ -1,0 +1,6 @@
+On a machine with jekyll installed:
+	Navigate to root of pburgeson.github.io
+	Run "bundle exec jekyll b" to build, it will store in "_site" folder
+	Delete all files in "docs" folder
+	Copy all files from "_site" folder to "docs" folder
+	Copy "CNAME" and ".nojekyll" files to "docs" folder
