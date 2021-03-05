@@ -9,13 +9,13 @@
 
   
 
-  <title>DIY Glass</title>
+  <title>Magellan ASV</title>
 
   
   <meta name="author" content="Paul Burgeson">
   
 
-  <meta name="description" content="# DIY Glass A short project intended to create glass starting with only sand. ## Background My wife and I fell in love during a trip to St George Island, FL. In an effort to commemorate that trip, I decided to try to make jewelry from the sand at the...">
+  <meta name="description" content="# Magellan Autonomous Surface Vehicle A project to create a robotic boat that will follow Magellan's voyage around the world. A total trip of over 40,000 miles. ## Background In 1519, Magellan started voyage that would result in the first circumnavigation of the globe. The story of early explorers is...">
 
   
 
@@ -72,15 +72,15 @@
 
   
   <meta property="og:site_name" content="Paul Burgeson">
-  <meta property="og:title" content="DIY Glass">
-  <meta property="og:description" content="# DIY Glass A short project intended to create glass starting with only sand. ## Background My wife and I fell in love during a trip to St George Island, FL. In an effort to commemorate that trip, I decided to try to make jewelry from the sand at the...">
+  <meta property="og:title" content="Magellan ASV">
+  <meta property="og:description" content="# Magellan Autonomous Surface Vehicle A project to create a robotic boat that will follow Magellan's voyage around the world. A total trip of over 40,000 miles. ## Background In 1519, Magellan started voyage that would result in the first circumnavigation of the globe. The story of early explorers is...">
 
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://paulburgeson.com/diyglass/">
-  <link rel="canonical" href="https://paulburgeson.com/diyglass/">
+  <meta property="og:url" content="https://paulburgeson.com/magellanasv/">
+  <link rel="canonical" href="https://paulburgeson.com/magellanasv/">
   
 
   
@@ -89,8 +89,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="DIY Glass">
-  <meta property="twitter:description" content="# DIY Glass A short project intended to create glass starting with only sand. ## Background My wife and I fell in love during a trip to St George Island, FL. In an effort to commemorate that trip, I decided to try to make jewelry from the sand at the...">
+  <meta property="twitter:title" content="Magellan ASV">
+  <meta property="twitter:description" content="# Magellan Autonomous Surface Vehicle A project to create a robotic boat that will follow Magellan's voyage around the world. A total trip of over 40,000 miles. ## Background In 1519, Magellan started voyage that would result in the first circumnavigation of the globe. The story of early explorers is...">
 
   
 
@@ -159,7 +159,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <!--<h1>DIY Glass</h1>-->
+          <!--<h1>Magellan ASV</h1>-->
           <h1></h1>
           
 
@@ -180,38 +180,35 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <h1 id="diy-glass">DIY Glass</h1>
-<p>A short project intended to create glass starting with only sand.</p>
+      <h1 id="magellan-autonomous-surface-vehicle">Magellan Autonomous Surface Vehicle</h1>
+<p>A project to create a robotic boat that will follow Magellan’s voyage around the world.  A total trip of over 40,000 miles.</p>
 
 <h2 id="background">Background</h2>
-<p>My wife and I fell in love during a trip to St George Island, FL.  In an effort to commemorate that trip, I decided to try to make jewelry from the sand at the beach.  I discretely gathered some sand from the beach on a later trip.  My intent was to make glass with it and then give the glass to jewelry maker to cut the glass into stones similar in appearance to diamonds.</p>
+<p>In 1519, Magellan started voyage that would result in the first circumnavigation of the globe.  The story of early explorers is fascinating to me as these people had no idea of exactly what they would face except that they would be on entirely on their own.  Now I want to combine that spirit with my love of robotics to send a robot off on an intrepid journey of its own.</p>
 
-<p><img src="../assets/img/sgi_beach.jpg" width="500" /></p>
+<h2 id="project-requirements">Project Requirements</h2>
+<ul>
+  <li>Fully autonomous navigation for duration of voyage</li>
+  <li>Follows Magellan’s route around the world</li>
+  <li>Completes voyage in 3 years or less</li>
+  <li>Solar powered</li>
+  <li>Satellite communcations</li>
+  <li>Able to be launched and retrieved by a single person
+Detail project requirements are available <a href="https://github.com/pburgeson/magellanASV/wiki/Project-Requirements">here</a></li>
+</ul>
 
-<h2 id="research--equipment">Research &amp; Equipment</h2>
-<p>A lot of my confidence in attempting this project came from <a href="https://www.youtube.com/watch?v=mUcUy7SqdS0">Applied Scince’s video</a> on making photochromatic glass.  I read some of the references he gave.  I opted to use the same kiln to keep things simple, a Paragon Quikfire 6.  I did not use as sophsicated of a controller as Applied Science.  Instead, I used a simple off the shelf PID temperature controller with a solid state relay on the 120V input line to maintain a stable, set temperature.  I used a cheap graphite jewelry ingot casting block and flipped it over to use the flat side to pour the glass.  Like Applied Scince, I used alumina silica bowls to mix the ingredients.</p>
+<h2 id="project-process">Project Process</h2>
+<p>The scope of this project is large enough, I will work my way up in complexity of the project.</p>
+<ul>
+  <li>Gen 1 - Basic vehicle with OTS electronics and software, testing in a pond</li>
+  <li>Gen 2 - Hand built hull with dev board electronics and custom software, testing in mid-sized lake</li>
+  <li>Gen 3 - Custom designed hull, custom electornics and software, redundant systems - testing in Great Lakes</li>
+  <li>Gen 4 - Update to Gen 3 for final voyage</li>
+  <li>Implement thrust vector control on model rocket</li>
+</ul>
 
-<p><img src="../assets/img/paragon_kiln.jpg" width="500" />
-<img src="../assets/img/temp_sensor.jpg" width="500" /></p>
-
-<h2 id="testing">Testing</h2>
-<p>My first set of attempts was to make less modern silica glass.  I let it “bake” for hours but could not get pooling to occur.  Effecitvely, I glazed the sand and with glass instead of forming a puddle of glass.  This was despite running at 1950 def F (1065 deg C), the limit of the kiln.  Finally, I took Applied Science’s advice from his video and made the more modern borosilica glass which is the same more thermal stress tolerant glass that Pyrex is made from.  This glass mixture melts at a substanially lower temperature.  I was stunned the first time I removed the top of the kiln and found a bowl with liquid glass in it.  It was the classic “I didn’t actually think this would work” moment.</p>
-
-<p><img src="../assets/img/glass_ingredients.jpg" width="500" />
-<img src="../assets/img/glass_first_attempt.jpg" width="500" />
-<img src="../assets/img/glass_baking.jpg" width="500" /></p>
-
-<h2 id="results">Results</h2>
-<p>I made two pieces of glass.  The first I allowed some liquid glass to drip onto a piece of stainless steel in the open air shown below.  This piece looks amazing optically clear, a testement to the beaches on St George Island.  This piece cracked due to the thermal stresses of cooling in open air.</p>
-
-<p><img src="../assets/img/glass_second_attempt.jpg" width="500" />
-<img src="../assets/img/glass_second_attempt_result.jpg" width="500" /></p>
-
-<p>The second piece of glass I poured onto the flat piece of graphite.  I then placed the hockey puck of liquid glass and the graphite back into the kiln so the glass would have a better chance to anneal.  Unfortunately, liquid glass is highly caustic and absorbs materials it is in contact with.  My hockey puck of glass absorbed some of the black carbon giving it the dark color shown below.</p>
-
-<p><img src="../assets/img/glass_second_attempt_puck.jpg" width="500" /></p>
-
-<p>While my wife loved the thought and effort for her gift, practical woman that she is, she opted not to spend the money to have the glass hockey puck cut into jewelry.  I am still happy having made glass from various powders.  This also provided me with the excuse I needed to buy kiln, which will likely come in handy on future projects.</p>
+<h2 id="git-repo">Git Repo</h2>
+<p><a href="https://github.com/pburgeson/magellanASV">MagellanASV</a></p>
 
 
       
