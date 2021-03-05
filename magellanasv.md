@@ -8,7 +8,7 @@ A project to create a robotic boat that will follow Magellan's voyage around the
 ## Background
 In 1519, Magellan started voyage that would result in the first circumnavigation of the globe.  The story of early explorers is fascinating to me as these people had no idea of exactly what they would face except that they would be on entirely on their own.  Now I want to combine that spirit with my love of robotics to send a robot off on an intrepid journey of its own.
 
-<img src="/assets/img/magellanasv_map.svg" width="500">
+<img src="/assets/img/magellanasv_map.svg" width="1000">
 
 ## Project Requirements
 - Fully autonomous navigation for duration of voyage
