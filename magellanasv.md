@@ -12,7 +12,7 @@ In 1519, Magellan started voyage that would result in the first circumnavigation
 
 A major source of inspriation was Damon McMillion and his [SeaCharger project](http://www.seacharger.com/).  He built a small ASV using hobbyist grade materials.  After launch is made its way from California to Hawaii.  Then it was relaunched and it made almost all the way to New Zealand.  When it was recovered, the prop blades and rudder were gone.  It validates my thoughts that reliability will be a major issue to navigate 10x as far.
 
-<img src="/assets/img/magellanasv_map.svg" width="1000">
+<img src="/assets/img/magellanasv_seacharger.jpg" width="1000">
 
 ## Project Requirements
 - Fully autonomous navigation for duration of voyage
