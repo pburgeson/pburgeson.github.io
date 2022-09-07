@@ -23,6 +23,11 @@ navbar-links:
   3D Scanner: 3dscanner
   Mini Falcon 9: minifalcon9
   Magellan ASV: magellanasv
+  PA28 Utilities:
+    - Weight & Balance: weightbalance
+    - TO / LA Distance: toladistance
+    - PAVE Checklist: pave
+    - Preflight: preflight
   Past Projects:
     - DIY Glass: diyglass
     - Cycloidal Drive: cycloidaldrive
