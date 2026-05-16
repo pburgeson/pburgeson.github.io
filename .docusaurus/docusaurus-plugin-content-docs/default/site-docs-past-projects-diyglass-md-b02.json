@@ -1,0 +1,27 @@
+{
+  "id": "past-projects/diyglass",
+  "title": "DIY Glass",
+  "description": "A short project intended to create glass starting with only sand.",
+  "source": "@site/docs/past-projects/diyglass.md",
+  "sourceDirName": "past-projects",
+  "slug": "/past-projects/diyglass",
+  "permalink": "/docs/past-projects/diyglass",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/past-projects/diyglass.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Past Projects",
+    "permalink": "/docs/category/past-projects"
+  },
+  "next": {
+    "title": "Cycloidal Drive",
+    "permalink": "/docs/past-projects/cycloidaldrive"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/Velocity-SE",
+  "source": "@site/src/pages/Velocity-SE.md",
+  "title": "Velocity SE",
+  "description": "Efforts to rebuild a Velocity SE into an outstanding cross country aircraft.",
+  "frontMatter": {
+    "title": "Velocity SE"
+  },
+  "unlisted": false
+}

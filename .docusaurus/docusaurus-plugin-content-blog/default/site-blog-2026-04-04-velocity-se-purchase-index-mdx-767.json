@@ -1,0 +1,32 @@
+{
+  "permalink": "/blog/Velocity-SE-Purchase",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026-04-04-Velocity-SE-Purchase/index.mdx",
+  "source": "@site/blog/2026-04-04-Velocity-SE-Purchase/index.mdx",
+  "title": "Velocity SE Purchase",
+  "description": "I purchased an airplane, but it needs a little work...",
+  "date": "2026-04-04T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Airplane",
+      "permalink": "/blog/tags/airplane",
+      "description": "Rebuilding and maintenance on Velocity SE"
+    }
+  ],
+  "readingTime": 2.21,
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "slug": "Velocity-SE-Purchase",
+    "title": "Velocity SE Purchase",
+    "authors": [],
+    "tags": [
+      "Airplane"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Landing Gear Prep",
+    "permalink": "/blog/Landing-Gear-Prep"
+  }
+}

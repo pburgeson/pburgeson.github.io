@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/Past-Projects",
+  "source": "@site/src/pages/Past-Projects.md",
+  "title": "Past Projects",
+  "description": "You don't need React to write simple standalone pages!!!",
+  "frontMatter": {
+    "title": "Past Projects"
+  },
+  "unlisted": false
+}

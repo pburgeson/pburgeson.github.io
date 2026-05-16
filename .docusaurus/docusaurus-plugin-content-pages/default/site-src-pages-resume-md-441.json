@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/Resume",
+  "source": "@site/src/pages/Resume.md",
+  "title": "Resume",
+  "description": "<iframe",
+  "frontMatter": {
+    "title": "Resume"
+  },
+  "unlisted": false
+}

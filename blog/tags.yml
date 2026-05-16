@@ -1,0 +1,74 @@
+Airplane:
+  label: Airplane
+  permalink: /airplane
+  description: Rebuilding and maintenance on Velocity SE
+
+Small Project:
+  label: Small Project
+  permalink: /smallproject
+  description: Small projects for fun or function
+
+Flying:
+  label: Flying
+  permalink: /flying
+  description: Updates on flights taken
+
+Airframe:
+  label: Airframe
+  permalink: /airframe
+  description: Work and maintenance on aircraft airframe
+
+Engine:
+  label: Engine
+  permalink: /engine
+  description: Work and maintenance on aircraft engine
+
+Prop:
+  label: Prop
+  permalink: /prop
+  description: Work and maintenance on aircraft prop
+
+Avionics:
+  label: Avionics
+  permalink: /avionics
+  description: Work and maintenance on aircraft avionics
+
+Interior:
+  label: Interior
+  permalink: /interior
+  description: Work and maintenance on aircraft interior
+
+Firewall Forward:
+  label: Firewall Forward
+  permalink: /firewallforward
+  description: Work and maintenance on aircraft forward of the firewall
+
+Fuel:
+  label: Fuel
+  permalink: /fuel
+  description: Work and maintenance on aircraft fuel system
+
+Electrical:
+  label: Electrical
+  permalink: /electrical
+  description: Work and maintenance on aircraft electrical system
+
+Landing Gear:
+  label: Landing Gear
+  permalink: /landinggear
+  description: Work and maintenance on aircraft landing gear
+
+Controls:
+  label: Controls
+  permalink: /controls
+  description: Work and maintenance on aircraft controls
+
+Paint:
+  label: Paint
+  permalink: /paint
+  description: Work and maintenance on aircraft paint and finish
+
+Workspace:
+  label: Workspace
+  permalink: /workspace
+  description: Development and upkeep of the workspace

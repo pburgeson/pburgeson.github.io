@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/Velocity-SERG",
+  "source": "@site/src/pages/Velocity-SERG.md",
+  "title": "Velocity SERG",
+  "description": "You don't need React to write simple standalone pages!!!",
+  "frontMatter": {
+    "title": "Velocity SERG"
+  },
+  "unlisted": false
+}

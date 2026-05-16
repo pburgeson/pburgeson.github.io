@@ -1,0 +1,48 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "past-projects/diyglass",
+          "docs": [
+            {
+              "id": "past-projects/3dscanner",
+              "path": "/docs/past-projects/3dscanner",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "past-projects/cycloidaldrive",
+              "path": "/docs/past-projects/cycloidaldrive",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "past-projects/diyglass",
+              "path": "/docs/past-projects/diyglass",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/past-projects",
+              "path": "/docs/category/past-projects",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/past-projects",
+                "label": "Past Projects"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

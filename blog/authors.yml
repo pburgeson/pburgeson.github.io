@@ -1,0 +1,11 @@
+pburgeson:
+  name: Paul Burgeson
+  title: Husband, Father, Engineer, and Pilot
+  url: https://paulburgeson.com
+  image_url: https://paulburgeson.com/assets/img/Headshot-2019%20-%20Cropped.jpg
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: '/all-paul-burgeson-articles'
+  socials:
+    linkedin: paulburgeson
+    github: pburgeson

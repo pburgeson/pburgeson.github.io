@@ -1,0 +1,46 @@
+{
+  "permalink": "/blog/Landing-Gear-Prep",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026-05-06-Landing-Gear-Prep/index.mdx",
+  "source": "@site/blog/2026-05-06-Landing-Gear-Prep/index.mdx",
+  "title": "Landing Gear Prep",
+  "description": "First order of business - make sure the nose gear doesn't collapse.",
+  "date": "2026-05-06T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Airplane",
+      "permalink": "/blog/tags/airplane",
+      "description": "Rebuilding and maintenance on Velocity SE"
+    },
+    {
+      "inline": false,
+      "label": "Landing Gear",
+      "permalink": "/blog/tags/landinggear",
+      "description": "Work and maintenance on aircraft landing gear"
+    },
+    {
+      "inline": false,
+      "label": "Airframe",
+      "permalink": "/blog/tags/airframe",
+      "description": "Work and maintenance on aircraft airframe"
+    }
+  ],
+  "readingTime": 2.13,
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "slug": "Landing-Gear-Prep",
+    "title": "Landing Gear Prep",
+    "authors": [],
+    "tags": [
+      "Airplane",
+      "Landing Gear",
+      "Airframe"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Velocity SE Purchase",
+    "permalink": "/blog/Velocity-SE-Purchase"
+  }
+}
