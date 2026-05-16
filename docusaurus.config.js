@@ -32,7 +32,6 @@ const config = {
   deploymentBranch: 'main',            // The branch GitHub Pages will read from
   trailingSlash: false,
   onBrokenLinks: 'throw',
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".

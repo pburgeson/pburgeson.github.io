@@ -33,6 +33,8 @@ export default {
   "baseUrl": "/",
   "organizationName": "pburgeson",
   "projectName": "pburgeson.github.io",
+  "deploymentBranch": "main",
+  "trailingSlash": false,
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",
@@ -47,8 +49,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "./sidebars.js"
         },
         "blog": {
           "showReadingTime": true,
@@ -59,7 +60,6 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "onInlineTags": "warn",
           "onInlineAuthors": "warn",
           "onUntruncatedBlogPosts": "warn"
