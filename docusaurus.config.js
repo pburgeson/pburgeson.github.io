@@ -29,7 +29,8 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pburgeson', // Usually your GitHub org/user name.
   projectName: 'pburgeson.github.io', // Usually your repo name.
-
+  deploymentBranch: 'main',            // The branch GitHub Pages will read from
+  trailingSlash: false,
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
