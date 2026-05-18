@@ -33,7 +33,7 @@ export default {
   "baseUrl": "/",
   "organizationName": "pburgeson",
   "projectName": "pburgeson.github.io",
-  "deploymentBranch": "main",
+  "deploymentBranch": "deployment",
   "trailingSlash": false,
   "onBrokenLinks": "throw",
   "i18n": {
