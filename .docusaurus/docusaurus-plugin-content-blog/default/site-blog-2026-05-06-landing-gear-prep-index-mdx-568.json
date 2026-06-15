@@ -38,6 +38,10 @@
     ]
   },
   "unlisted": false,
+  "prevItem": {
+    "title": "Shelves!",
+    "permalink": "/blog/Shelves"
+  },
   "nextItem": {
     "title": "Velocity SE Purchase",
     "permalink": "/blog/Velocity-SE-Purchase"

@@ -1,11 +1,14 @@
 {
-  "/blog-591": {
+  "/blog-d4f": {
     "__comp": "a6aa9e1f",
     "__context": {
       "plugin": "36994c47"
     },
     "sidebar": "814f3328",
     "items": [
+      {
+        "content": "6efed259"
+      },
       {
         "content": "b9b85d14"
       },
@@ -56,6 +59,17 @@
     "sidebar": "814f3328",
     "content": "56832b9c"
   },
+  "/blog/Shelves-206": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "f2860d4f"
+  },
   "/blog/tags-287": {
     "__comp": "01a85c17",
     "__context": {
@@ -77,13 +91,16 @@
     ],
     "__props": "b2ebe4c6"
   },
-  "/blog/tags/airplane-7ed": {
+  "/blog/tags/airplane-cc0": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
     },
     "sidebar": "814f3328",
     "items": [
+      {
+        "content": "6efed259"
+      },
       {
         "content": "b9b85d14"
       },
@@ -105,6 +122,19 @@
       }
     ],
     "__props": "be72cdd7"
+  },
+  "/blog/tags/workspace-941": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "6efed259"
+      }
+    ],
+    "__props": "cecb9a2a"
   },
   "/blog/Velocity-SE-Purchase-855": {
     "__comp": "ccc49370",
