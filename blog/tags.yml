@@ -38,10 +38,10 @@ Interior:
   permalink: /interior
   description: Work and maintenance on aircraft interior
 
-Firewall Forward:
-  label: Firewall Forward
-  permalink: /firewallforward
-  description: Work and maintenance on aircraft forward of the firewall
+Firewall Aft:
+  label: Firewall Aft
+  permalink: /firewallaft
+  description: Work and maintenance on aircraft aft of the firewall
 
 Fuel:
   label: Fuel
