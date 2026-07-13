@@ -11,4 +11,13 @@ There are going to be a lot of parts - a system is needed.
 The more I look at the aircraft, the more things I see that need to be done.  Those things will require parts.  How best to keep track of all of those parts?  I'm going to create a part numbering system.  It may well be overkill, and there may be established ways to do it.  But this way it can be my own.
 
 ## The Plan
-This also seems like a good opportunity to use modern tools.  I need to generate a part numbering scheme, why not use a generative AI system to assist in the process?
+This also seems like a good opportunity to use modern tools.  I need to generate a part numbering scheme, why not use a generative AI system to assist in the process?  
+
+## Developing the System
+My first question for the omniscient robot was to better understand the differences between a smart / human readable numbering system and a simple sequential numbering system.  It had good suggestions about one vs the other:  Smart systems are easier for people, but can run out of numbers within the intelligence.  Dumb numbering systems don't get bogged down in details about which part should get which number, but every number has to be looked up in a reference database to know what it is.  I'll admit that my bias was towards something in between partially because I like the organization of a smart system, but appreciate the simplicity of a sequential system.
+
+The AI system suggested a category prefix, a part number, and a revision letter.  I liked the overall approach, but wasn't sure about how to categorize.  My initial thought was the same as the aircraft log books - airframe, engine, and prop.  That puts a tremendous number of parts in airframe.  What sort of divisions would make sense for airframe?  Again - ask the robot for suggestions.  It thought about it for a bit, did some research, and then recommended essentially the same catogries as major components in a kit.  I had some back and forth with it finessing the categories, and the settled on the items below.
+
+One thing not on my radar that it brought up was a checksum valve built into the number to be able to check that a given part number is valid.  Is it overkill for a numbering system with a single user that will likely never be used again?  Yes - absolutely.  But it lends credibility to the system as a whole, it is fun to try new things, and it just the right amount of overly complicated that my engineer brain likes.  For those keeping score at home, this is a Mod-10 (Luhn) system.
+
+## The System
