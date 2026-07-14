@@ -2,11 +2,102 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://paulburgeson.com/blog</id>
     <title>Paul Burgeson Blog</title>
-    <updated>2026-06-08T00:00:00.000Z</updated>
+    <updated>2026-07-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://paulburgeson.com/blog"/>
     <subtitle>Paul Burgeson Blog</subtitle>
     <icon>https://paulburgeson.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Part Numbers]]></title>
+        <id>https://paulburgeson.com/blog/Part-Numbers</id>
+        <link href="https://paulburgeson.com/blog/Part-Numbers"/>
+        <updated>2026-07-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There are going to be a lot of parts - a system is needed.]]></summary>
+        <content type="html"><![CDATA[<p>There are going to be a lot of parts - a system is needed.</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-motivation">The Motivation<a href="https://paulburgeson.com/blog/Part-Numbers#the-motivation" class="hash-link" aria-label="Direct link to The Motivation" title="Direct link to The Motivation" translate="no">​</a></h2>
+<p>The more I look at the aircraft, the more things I see that need to be done.  Those things will require parts.  How best to keep track of all of those parts?  I'm going to create a part numbering system.  It may well be overkill, and there may be established ways to do it.  But this way it can be my own.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-plan">The Plan<a href="https://paulburgeson.com/blog/Part-Numbers#the-plan" class="hash-link" aria-label="Direct link to The Plan" title="Direct link to The Plan" translate="no">​</a></h2>
+<p>This also seems like a good opportunity to use modern tools.  I need to generate a part numbering scheme, why not use a generative AI system to assist in the process?</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="developing-the-system">Developing the System<a href="https://paulburgeson.com/blog/Part-Numbers#developing-the-system" class="hash-link" aria-label="Direct link to Developing the System" title="Direct link to Developing the System" translate="no">​</a></h2>
+<p>My first question for the omniscient robot was to better understand the differences between a smart / human readable numbering system and a simple sequential numbering system.  It had good suggestions about one vs the other:  Smart systems are easier for people, but can run out of numbers within the intelligence.  Dumb numbering systems don't get bogged down in details about which part should get which number, but every number has to be looked up in a reference database to know what it is.  I'll admit that my bias was towards something in between partially because I like the organization of a smart system, but appreciate the simplicity of a sequential system.</p>
+<p>The AI system suggested a category prefix, a part number, and a revision letter.  I liked the overall approach, but wasn't sure about how to categorize.  My initial thought was the same as the aircraft log books - airframe, engine, and prop.  That puts a tremendous number of parts in airframe.  What sort of divisions would make sense for airframe?  Again - ask the robot for suggestions.  It thought about it for a bit, did some research, and then recommended essentially the same catogries as major components in a kit.  I had some back and forth finessing the categories, and then settled on the items below.</p>
+<p>One thing not on my radar that it brought up was a checksum value built into the number to be able to check that a given part number is valid.  Is it overkill for a numbering system with a single user that will likely never be used again?  Yes - absolutely.  But it lends credibility to the system as a whole, it is fun to try new things, and it is just the right amount of overly complicated that my engineer brain likes.  For those keeping score at home, this is a Mod-10 (Luhn) system.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-system">The System<a href="https://paulburgeson.com/blog/Part-Numbers#the-system" class="hash-link" aria-label="Direct link to The System" title="Direct link to The System" translate="no">​</a></h2>
+<p>The final system was more intricate than is probably needed, but I'm happy with it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prefixes">Prefixes<a href="https://paulburgeson.com/blog/Part-Numbers#prefixes" class="hash-link" aria-label="Direct link to Prefixes" title="Direct link to Prefixes" translate="no">​</a></h3>
+<p>A total of 13 prefixes that map to distinct parts of the aircraft to attempt to ensure no ambiguity in which parts belong to which category:</p>
+<ul>
+<li class="">AVI - Avionics</li>
+<li class="">CAN - Canard</li>
+<li class="">CTL - Flight Controls</li>
+<li class="">ELE - Electrical</li>
+<li class="">ENG - Engine</li>
+<li class="">FAE - Firewall Aft Engine</li>
+<li class="">FUE - Fuel System</li>
+<li class="">FUS - Fuselage</li>
+<li class="">GEA - Landing Gear</li>
+<li class="">HDW - Hardware</li>
+<li class="">INT - Interior</li>
+<li class="">TOL - Workshop, tools, &amp; jigs</li>
+<li class="">WNG - Wing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-numbers">Part Numbers<a href="https://paulburgeson.com/blog/Part-Numbers#part-numbers" class="hash-link" aria-label="Direct link to Part Numbers" title="Direct link to Part Numbers" translate="no">​</a></h3>
+<p>I settled on a 4 digit part numbering system, starting at 1000 to avoid issues with 0 prefixes being truncated.  That results in about 9,000 available part numbers.  5 digits meant 90,000 part numbers which seemed excessive for a single aircraft.  3 digits meant 900 part numbers which seemed like it could be possible to run out over time.  I also opted to pull part numbers from a global pool rather than giving each category its own pool.  This does slightly defeat the purpose of the categories, but they still make it easier to read.  The global pool also makes it less likely that part numbers will get reused when they shouldn't.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="suffixes">Suffixes<a href="https://paulburgeson.com/blog/Part-Numbers#suffixes" class="hash-link" aria-label="Direct link to Suffixes" title="Direct link to Suffixes" translate="no">​</a></h3>
+<p>Two suffixes were added.  The first is the Mod-10 check sum.  The second is the revision letter for this part number.  I am sure some parts will have many revisions, but with luck most part numbers will simply have a revision letter of A.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="putting-it-all-together">Putting It All Together<a href="https://paulburgeson.com/blog/Part-Numbers#putting-it-all-together" class="hash-link" aria-label="Direct link to Putting It All Together" title="Direct link to Putting It All Together" translate="no">​</a></h3>
+<p>The final system puts it all together:
+<img decoding="async" loading="lazy" alt="Part Number System" src="https://paulburgeson.com/assets/images/part_number_structure-a5d94f2cbb3cedd56e6ae7c5bbac10f8.png" width="583" height="147" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-register">Part Register<a href="https://paulburgeson.com/blog/Part-Numbers#part-register" class="hash-link" aria-label="Direct link to Part Register" title="Direct link to Part Register" translate="no">​</a></h2>
+<p>This was one of the most impressive parts of using an AI tool.  It rightfully suggested that I'll need a place to store these part numbers so that they can be translated into useful human readable information.  It offered to create a spreadsheet for me.  I said yes, and after about 3 minutes, a beautiful, well format excel workbook was created.  I made effectively no changes and have been using it as is.</p>
+<p>It generated a nice table for tracking all of the part numbers and applicable information:
+<img decoding="async" loading="lazy" alt="Part Register Table" src="https://paulburgeson.com/assets/images/part_register_header-0ad741891718a5e738145cba81d64fc4.png" width="1864" height="202" class="img_ev3q"></p>
+<p>It generated a tool for creating new part numbers using the next available part number:
+<img decoding="async" loading="lazy" alt="Part Number New Part" src="https://paulburgeson.com/assets/images/part_register_new_part-c0fa569728e47f67cb59f6242d5c48b2.png" width="754" height="534" class="img_ev3q"></p>
+<p>It generated a reference page for the prefixes and other useful information:
+<img decoding="async" loading="lazy" alt="Part Register Reference" src="https://paulburgeson.com/assets/images/part_register_reference-0a95a361e8a244b51911bd4eb41f5e0e.png" width="1213" height="594" class="img_ev3q"></p>
+<p>It generated an automated tool to check the validity of a given part number.
+<img decoding="async" loading="lazy" alt="Part Register Validator" src="https://paulburgeson.com/assets/images/part_register_validator-327075036416f14c753e83eed461205e.png" width="804" height="334" class="img_ev3q"></p>
+<p>It generated a summary page to show how many parts are used in each category:
+<img decoding="async" loading="lazy" alt="Part Register Summary" src="https://paulburgeson.com/assets/images/part_register_summary-a5fb019c8deaa1498b3621545773bc30.png" width="819" height="621" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="going-forward">Going Forward<a href="https://paulburgeson.com/blog/Part-Numbers#going-forward" class="hash-link" aria-label="Direct link to Going Forward" title="Direct link to Going Forward" translate="no">​</a></h2>
+<p>I found it delightfully easy to use the generative AI tool to build this system.  I still have reservations on using such tools leading to stagnation of useful skills.  That said, I'm sure similar concerns were raised when pocket calculators became affordable.  Now we all truly do walk around with calculators in our pocket.  The first two part numbers had nice homes inside of the tool so I'm happy to keep using the register as is.</p>]]></content>
+        <category label="Airplane" term="Airplane"/>
+        <category label="Workspace" term="Workspace"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cleanup & Gas Spring]]></title>
+        <id>https://paulburgeson.com/blog/Cleanup &amp; Gas Spring</id>
+        <link href="https://paulburgeson.com/blog/Cleanup &amp; Gas Spring"/>
+        <updated>2026-07-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The first part replaced.]]></summary>
+        <content type="html"><![CDATA[<p>The first part replaced.</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tidying-up-the-workspace">Tidying up The Workspace<a href="https://paulburgeson.com/blog/Cleanup%20&amp;%20Gas%20Spring#tidying-up-the-workspace" class="hash-link" aria-label="Direct link to Tidying up The Workspace" title="Direct link to Tidying up The Workspace" translate="no">​</a></h2>
+<p>The first order of business for these two trips to the storage unit was to get everything up off the floor and onto the shelves.  There is something satisfying about tidying up, even in a workspace.  As a knowledgeable engineer friend once told me, a clean workspace is a happy workspace.  I was glad that by the time I was done, there was plenty of room left on the shelves.  I expect that will not remain true forever.</p>
+<p>Image of the shelves with stuff</p>
+<p>I also cleaned out the inside of the aircraft.  There were aircraft components that had been put inside the fuselage for transport from Nebraska and a significant amount of debris from the previous owner's time working on the aircraft.  I removed a medium sized bag of trash, and discovered that there was oil leaking from a pump hanging off its wires on the firewall.  Also found a few tools - vise grips, sliding clamp, flat head screwdriver, and a rusty box cutter.  Soaked up as much oil as I could with paper towels, but need to come back with something better able to soak oil off the fiberglass.</p>
+<p><img decoding="async" loading="lazy" alt="Interior of Aircraft" src="https://paulburgeson.com/assets/images/Inside_of_aircraft-5a2b1fdf2fcae211fafa51d9ab35742d.jpg" width="2448" height="3264" class="img_ev3q"></p>
+<p>I had to stop short of vacuuming the inside of the aircraft.  The power outlet in the storage unit is limited to 6 amps since it's intended to run a trickle charger for an RV.  Turns out my small shop vac consumes more than 6 amps or whatever the breaker actually allows.  I have a small generator that I need to get working to solve the power issue.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="replacing-the-first-part">Replacing the First Part<a href="https://paulburgeson.com/blog/Cleanup%20&amp;%20Gas%20Spring#replacing-the-first-part" class="hash-link" aria-label="Direct link to Replacing the First Part" title="Direct link to Replacing the First Part" translate="no">​</a></h2>
+<p>The first part to be replaced is the gas spring to lock the nose landing gear in the down position.  It was a surprise to me to learn when I arrived to pick up the aircraft from the seller that the nose landing gear would have to be strapped to the mains to keep it from collapsing.  To the seller's credit, it was a known issue and he had already procured the replacement gas spring.</p>
+<p><img decoding="async" loading="lazy" alt="Velocity on Truck Straps Highlighted" src="https://paulburgeson.com/assets/images/Velocity_On_Truck_Straps-7a5c35f380386f2df7a4236435ea046e.jpeg" width="1459" height="1145" class="img_ev3q"></p>
+<p>The nose gear mechanism has some complexity to it, but this is the gas spring that needs to be replaced.  It's job is to keep the nose gear mechanism locked in the down position by ensuring it stays past its toggle position.</p>
+<p><img decoding="async" loading="lazy" alt="Nose Gear Mechanism" src="https://paulburgeson.com/assets/images/Nose_Gear_Mechanism-ccd3a6b067bd1292cb92efa16989bb13.png" width="1446" height="793" class="img_ev3q"></p>
+<p>The biggest hurdle is the fact that the entire nose gear mechanism is inside of the keel of the aircraft.  That means that working on it requires working through only the holes already cut into the fiberglass.  An annoying challenge to be sure.</p>
+<p><img decoding="async" loading="lazy" alt="Openings in Keel" src="https://paulburgeson.com/assets/images/Openings_in_Keel-dd12981dab79655234f428ec1d480d13.jpg" width="2448" height="3264" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="Gas Spring Installed" src="https://paulburgeson.com/assets/images/Gas_Spring_Installed-a4e98d4eb6df0326b727af0322ca7c40.jpg" width="2448" height="3264" class="img_ev3q"></p>
+<p>Thankfully, it is possible to see from above though the opening in the keel for the controls.  After much fiddling and discovering that I probably need to take up yoga to be flexible enough to work on airplanes, I was able to get the old spring out.  It is certainly busted as it provides almost no resistance to movement.  More fiddling, and the new one was mostly in place.  I couldn't fully tighten the lower gas spring mount because my wrench was too wide to fit between the body of the spring and the hex feature to keep the mount from rotating.  A custom tool will be needed.</p>
+<p>Picture of the old spring.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removal-of-avionics">Removal of Avionics<a href="https://paulburgeson.com/blog/Cleanup%20&amp;%20Gas%20Spring#removal-of-avionics" class="hash-link" aria-label="Direct link to Removal of Avionics" title="Direct link to Removal of Avionics" translate="no">​</a></h2>
+<p>With some extra time available, I also removed more of the old avionics.  I don't have a plan for what is going to be installed in the long term, but removing the entire panel will provide better access for work on other items.  I did not bring a set of hex keys, so I couldn't remove the radio stack.  That will be a job for a future trip.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="https://paulburgeson.com/blog/Cleanup%20&amp;%20Gas%20Spring#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<p>Fabrication of a tool that is narrow enough to fit on these gas spring ends.  Removal of the rest of the panel is next up as well.</p>]]></content>
+        <category label="Airplane" term="Airplane"/>
+        <category label="Workspace" term="Workspace"/>
+        <category label="Landing Gear" term="Landing Gear"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Shelves!]]></title>
         <id>https://paulburgeson.com/blog/Shelves</id>
@@ -21,7 +112,7 @@
 <p>While my lease does not allow loitering, it doesn't expicitly exclude working on an airplane.  With the wings in the back of the hangar, the shelves can go along the left side since the fuselage is already biased to the right.  Once the landing gear is repaired, I'd like to flip the fueselage around to make it easier to get in and out of the unit.  One set of shelves will be split in half and the top shelves will workbenches.  Picturs of the current layout are below.</p>
 <p><img decoding="async" loading="lazy" alt="New Shelves" src="https://paulburgeson.com/assets/images/101_0121-e7059b4bf9ef8030dbda6cf0e520db9b.JPG" width="4608" height="3456" class="img_ev3q"></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="https://paulburgeson.com/blog/Shelves#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
-<p>It is a small, incremental step foward.  I have more evenings in July planned for aircraft work, so more progress should be had.  I'm weirdly excited about having shelves to store things.  I'm a beleive that nothing should be stored directly on the floor.</p>]]></content>
+<p>It is a small, incremental step foward.  I have more evenings in July planned for aircraft work, so more progress should be had.  I'm weirdly excited about having shelves to store things.  I'm a beleiver that nothing should be stored directly on the floor.</p>]]></content>
         <category label="Airplane" term="Airplane"/>
         <category label="Workspace" term="Workspace"/>
     </entry>
