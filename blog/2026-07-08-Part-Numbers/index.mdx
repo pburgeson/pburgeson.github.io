@@ -46,3 +46,32 @@ I settled on a 4 digit part numbering system.  Since it starts at 1000 to avoid 
 Two suffixes were added.  The first is the Mod-10 check sum.  The second is the revision letter for this part number.  I am sure some parts will have many reivisions, but with luck most part numbers will simply have a revision letter of A.
 
 ### Putting It All Together
+The final system puts it all together:
+
+FUS-1042-8-B
+│   │    │ │
+│   │    │ └── Revision
+│   │    └──── Check digit (Mod-10 Luhn, over the 4-digit payload)
+│   └───────── Sequential payload (4 digits, starts at 1000)
+└───────────── Category prefix (3-letter)
+
+## Part Register
+This was one of the most impressive parts of using an AI tool.  It rightfully suggested that I'll need a place to store these part numbers so that the number can be translated into useful human readable information.  It offered to create a spreadsheet for me.  I said yes and after about 3 minutes, a beautiful, well format excel workbook was created.  I made effectively no changes and have been using it as is. 
+
+It generated a nice table for tracking all of the part numbers and applicable information:
+![Part Register Table](./part_register_header.png)
+
+It generated a tool for creating new part numbers using the next available part number:
+![Part Number New Part](./part_register_new_part.png)
+
+It generated a reference page for the prefixes and other useful information:
+![Part Register Reference](./part_register_reference.png)
+
+It generated an automated tool to check the validity of a given part number.
+![Part Register Validator](./part_register_validator.png)
+
+It generated a summary page to show how many parts are used in each category:
+![Part Register Summary](./part_register_summary.png)
+
+## Going Forward
+I found it delightfully easy to use the generative AI tool to build this system.  I still have reservations on using such tools leading to stagnation of useful skills.  That said, I'm sure similar concerns were raised when pocket calculators became affordable.  Now we all truely do walk around with calculators in our pocket.  The first two parts had nice places inside of the tool so I'm happy to keep using the register as is.
