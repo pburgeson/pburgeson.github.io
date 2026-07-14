@@ -1,0 +1,38 @@
+{
+  "permalink": "/blog/Part-Numbers",
+  "source": "@site/blog/2026-07-08-Part-Numbers/index.mdx",
+  "title": "Part Numbers",
+  "description": "There are going to be a lot of parts - a system is needed.",
+  "date": "2026-07-08T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Airplane",
+      "permalink": "/blog/tags/airplane",
+      "description": "Rebuilding and maintenance on Velocity SE"
+    },
+    {
+      "inline": false,
+      "label": "Workspace",
+      "permalink": "/blog/tags/workspace",
+      "description": "Development and upkeep of the workspace"
+    }
+  ],
+  "readingTime": 4.61,
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "slug": "Part-Numbers",
+    "title": "Part Numbers",
+    "authors": [],
+    "tags": [
+      "Airplane",
+      "Workspace"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Cleanup & Gas Spring",
+    "permalink": "/blog/Cleanup & Gas Spring"
+  }
+}

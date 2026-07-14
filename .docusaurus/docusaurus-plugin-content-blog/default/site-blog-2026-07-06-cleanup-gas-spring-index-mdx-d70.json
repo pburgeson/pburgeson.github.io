@@ -1,0 +1,49 @@
+{
+  "permalink": "/blog/Cleanup & Gas Spring",
+  "source": "@site/blog/2026-07-06-Cleanup-&-Gas-Spring/index.mdx",
+  "title": "Cleanup & Gas Spring",
+  "description": "The first part replaced.",
+  "date": "2026-07-06T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Airplane",
+      "permalink": "/blog/tags/airplane",
+      "description": "Rebuilding and maintenance on Velocity SE"
+    },
+    {
+      "inline": false,
+      "label": "Workspace",
+      "permalink": "/blog/tags/workspace",
+      "description": "Development and upkeep of the workspace"
+    },
+    {
+      "inline": false,
+      "label": "Landing Gear",
+      "permalink": "/blog/tags/landinggear",
+      "description": "Work and maintenance on aircraft landing gear"
+    }
+  ],
+  "readingTime": 3.34,
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "slug": "Cleanup & Gas Spring",
+    "title": "Cleanup & Gas Spring",
+    "authors": [],
+    "tags": [
+      "Airplane",
+      "Workspace",
+      "Landing Gear"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Part Numbers",
+    "permalink": "/blog/Part-Numbers"
+  },
+  "nextItem": {
+    "title": "Shelves!",
+    "permalink": "/blog/Shelves"
+  }
+}
